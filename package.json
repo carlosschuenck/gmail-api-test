@@ -1,0 +1,126 @@
+{
+    "name": "gmailteste",
+    "version": "0.0.1",
+    "dependencies": {
+        "chai": "1.9.1",
+        "google-auth-library": "^0.12.0",
+        "googleapis": "^24.0.0",
+        "grunt": "*",
+        "grunt-contrib-clean": "0.5.0",
+        "grunt-contrib-copy": "0.5.0",
+        "grunt-contrib-jshint": "0.9.2",
+        "grunt-istanbul": "~0.2.4",
+        "grunt-istanbul-coverage": "0.0.5",
+        "grunt-jscs-checker": "*",
+        "grunt-mocha-test": "~0.9.0",
+        "node-gmail-api": "^0.6.1"
+    },
+    "scripts": {
+        "start": "node app.js"
+    },
+    "jshintConfig": {
+        "bitwise": true,
+        "curly": true,
+        "camelcase": true,
+        "eqeqeq": true,
+        "freeze": true,
+        "immed": true,
+        "latedef": false,
+        "newcap": true,
+        "noarg": true,
+        "forin": true,
+        "sub": true,
+        "undef": true,
+        "unused": true,
+        "noempty": true,
+        "boss": false,
+        "eqnull": true,
+        "browser": true,
+        "indent": 4,
+        "maxcomplexity": 7,
+        "maxstatements": 36,
+        "maxparams": 5,
+        "maxdepth": 3,
+        "maxlen": 100,
+        "trailing": true,
+        "maxerr": 5,
+        "globals": {
+            "module": true,
+            "require": true,
+            "describe": true,
+            "it": true,
+            "expect": true,
+            "assert": true,
+            "chai": true,
+            "Buffer": true
+        }
+    },
+    "jscsConfig": {
+        "requireCurlyBraces": [
+            "if",
+            "else",
+            "for",
+            "while",
+            "do",
+            "try",
+            "catch"
+        ],
+        "requireSpaceAfterKeywords": [
+            "if",
+            "else",
+            "for",
+            "while",
+            "do",
+            "switch",
+            "return",
+            "try",
+            "catch"
+        ],
+        "disallowLeftStickedOperators": [
+            "?",
+            "/",
+            "*",
+            "=",
+            "==",
+            "===",
+            "!=",
+            "!==",
+            ">",
+            ">=",
+            "<",
+            "<="
+        ],
+        "disallowRightStickedOperators": [
+            "?",
+            "/",
+            "*",
+            ":",
+            "=",
+            "==",
+            "===",
+            "!=",
+            "!==",
+            ">",
+            ">=",
+            "<",
+            "<="
+        ],
+        "requireRightStickedOperators": [
+            "!"
+        ],
+        "requireLeftStickedOperators": [
+            ","
+        ],
+        "disallowImplicitTypeConversion": [
+            "string"
+        ],
+        "disallowKeywords": [
+            "with"
+        ],
+        "disallowMultipleLineBreaks": true,
+        "safeContextKeyword": "self",
+        "disallowKeywordsOnNewLine": [
+            "else"
+        ]
+    }
+}
